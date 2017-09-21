@@ -1,5 +1,6 @@
 #!/bin/bash
-
+ARCH=arm
+CROSS_COMPILE=/home/vasy/arm-4.9/bin/arm-eabi
 
 make msm8916_sec_defconfig VARIANT_DEFCONFIG=msm8916_sec_j5nlte_eur_defconfig SELINUX_DEFCONFIG=selinux_defconfig
 make -j9

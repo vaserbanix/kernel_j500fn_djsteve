@@ -1,7 +1,7 @@
 VERSION = 3
 PATCHLEVEL = 10
 SUBLEVEL = 55
-EXTRAVERSION =
+EXTRAVERSION =-vasy-
 NAME = TOSSUG Baby Fish
 
 # *DOCUMENTATION*
@@ -193,7 +193,7 @@ SUBARCH := $(shell uname -m | sed -e s/i.86/x86/ -e s/x86_64/x86/ \
 # Default value for CROSS_COMPILE is not to prefix executables
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
 ARCH            ?= arm
-CROSS_COMPILE   ?= /build/j500fn/linaro/gcc-linaro-arm-none-eabi-4.8-2014.04_linux/bin/arm-none-eabi-
+CROSS_COMPILE   ?= /home/vasy/arm-4.9/bin/arm-eabi-
 #CROSS_COMPILE	?= /build/uxsm/hyper-toolchains-arm-eabi-4.9-c1ba91d79e8d/bin/arm-eabi-
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
